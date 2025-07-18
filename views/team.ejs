@@ -1,0 +1,13 @@
+<!-- views/team.ejs -->
+<%- include('partials/header') %>
+<div class="team-grid">
+    <% teamMembers.forEach(member => { %>
+        <div class="member-card">
+            <img src="<%= member.photo %>" alt="<%= member.name %>">
+            <h3><%= member.name %></h3>
+            <p><%= member.position %></p>
+            <p><%= member.bio %></p>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
