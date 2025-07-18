@@ -1,0 +1,9 @@
+.hero-section {  
+    @apply min-h-screen flex items-center justify-center;  
+    background: linear-gradient(135deg, $primary-color, $accent-color);  
+      
+    .hero-content {  
+      @apply text-center text-white;  
+    }  
+  }  
+  
