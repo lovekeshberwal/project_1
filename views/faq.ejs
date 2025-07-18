@@ -1,0 +1,11 @@
+<!-- views/faq.ejs -->
+<%- include('partials/header') %>
+<div class="faq-container">
+    <% faqs.forEach((faq, index) => { %>
+        <div class="faq-item">
+            <h3 class="question" data-toggle="<%= index %>"><%= faq.question %></h3>
+            <p class="answer" id="answer-<%= index %>"><%= faq.answer %></p>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
