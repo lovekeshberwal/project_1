@@ -1,0 +1,20 @@
+<!-- views/partials/header.ejs -->
+<!DOCTYPE html>
+<html data-theme="<%= theme || 'light' %>">
+<head>
+    <title><%= title %></title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <% navItems.forEach(item => { %>
+            <a href="<%= item.url %>"><%= item.name %></a>
+        <% }) %>
+    </nav>
+
+<!-- views/partials/footer.ejs -->
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> <%= siteName %></p>
+    </footer>
+</body>
+</html>
