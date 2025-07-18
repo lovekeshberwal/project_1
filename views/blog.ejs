@@ -1,0 +1,12 @@
+<!-- views/blog.ejs -->
+<%- include('partials/header') %>
+<div class="blog-container">
+    <% articles.forEach(article => { %>
+        <article>
+            <h2><%= article.title %></h2>
+            <p class="meta">By <%= article.author %> on <%= article.date %></p>
+            <p><%= article.excerpt %></p>
+        </article>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
