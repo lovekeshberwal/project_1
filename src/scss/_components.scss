@@ -6,4 +6,22 @@
       @apply text-center text-white;  
     }  
   }  
+
+  .contact-form {  
+    @apply max-w-lg mx-auto p-6 bg-base-100 rounded-lg shadow-lg;  
+      
+    .form-control {  
+      @apply mb-4;  
+        
+      input, textarea {  
+        @apply input input-bordered w-full;  
+        transition: border-color 0.3s ease;  
+          
+        &:focus {  
+          @apply border-primary;  
+        }  
+      }  
+    }  
+  }  
+  
   
