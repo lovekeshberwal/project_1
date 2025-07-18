@@ -23,5 +23,19 @@
       }  
     }  
   }  
+
+  .blog-container {  
+    @apply container mx-auto px-4 py-8;  
+      
+    .article-card {  
+      @apply bg-base-100 rounded-lg shadow-md p-6 mb-6;  
+      transition: transform 0.3s ease, shadow 0.3s ease;  
+        
+      &:hover {  
+        @apply shadow-xl;  
+        transform: translateY(-2px);  
+      }  
+    }  
+  }  
   
   
