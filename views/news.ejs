@@ -1,0 +1,15 @@
+<!-- views/news.ejs -->
+<%- include('partials/header') %>
+<div class="news-grid">
+    <% newsArticles.forEach(article => { %>
+        <div class="news-card">
+            <img src="<%= article.thumbnail %>" alt="<%= article.title %>">
+            <div class="news-content">
+                <h3><%= article.title %></h3>
+                <p class="date"><%= article.publishDate %></p>
+                <p><%= article.summary %></p>
+            </div>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
