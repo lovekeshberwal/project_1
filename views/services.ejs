@@ -1,11 +1,17 @@
 <!-- views/services.ejs -->
 <%- include('partials/header') %>
-<div class="services-container">
+<!-- Update services.ejs -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <% services.forEach(service => { %>
-        <div class="service-card">
-            <h3><%= service.name %></h3>
-            <p><%= service.description %></p>
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title"><%= service.name %></h2>
+          <p><%= service.description %></p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Learn More</button>
+          </div>
         </div>
+      </div>
     <% }) %>
-</div>
+  </div>
 <%- include('partials/footer') %>
