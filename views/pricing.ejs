@@ -1,0 +1,16 @@
+<!-- views/pricing.ejs -->
+<%- include('partials/header') %>
+<div class="pricing-container">
+    <% pricingPlans.forEach(plan => { %>
+        <div class="pricing-card">
+            <h3><%= plan.name %></h3>
+            <p class="price">$<%= plan.price %></p>
+            <ul>
+                <% plan.features.forEach(feature => { %>
+                    <li><%= feature %></li>
+                <% }) %>
+            </ul>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
