@@ -1,0 +1,11 @@
+<!-- views/services.ejs -->
+<%- include('partials/header') %>
+<div class="services-container">
+    <% services.forEach(service => { %>
+        <div class="service-card">
+            <h3><%= service.name %></h3>
+            <p><%= service.description %></p>
+        </div>
+    <% }) %>
+</div>
+<%- include('partials/footer') %>
